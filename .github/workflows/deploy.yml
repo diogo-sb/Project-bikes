@@ -14,11 +14,11 @@ jobs:
       DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
       - name: Setup Databricks CLI
         uses: databricks/setup-cli@main
+
+      - name: Validate Bundle
+        run: databricks bundle validate
 
       - name: Verificar autenticação
         run: databricks current-user me

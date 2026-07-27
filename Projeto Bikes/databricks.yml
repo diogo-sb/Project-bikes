@@ -1,0 +1,5 @@
+bundle:
+  name: bike-store
+
+workspace:
+  host: ${env.DATABRICKS_HOST}
