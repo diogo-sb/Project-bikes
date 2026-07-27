@@ -1,5 +1,5 @@
 bundle:
-  name: bike-store
+  name: Project-bikes
 
 workspace:
   host: ${env.DATABRICKS_HOST}
