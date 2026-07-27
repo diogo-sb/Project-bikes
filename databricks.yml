@@ -1,2 +1,5 @@
 bundle:
   name: Project-bikes
+
+include:
+  - Projeto Bikes/resources/*.yml
