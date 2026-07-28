@@ -28,3 +28,6 @@ jobs:
 
       - name: Verificar autenticação
         run: databricks current-user me
+      
+      - name: Run Job
+        run: databricks bundle run bikes_job
