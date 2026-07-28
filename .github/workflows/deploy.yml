@@ -1,8 +1,8 @@
-name: CI
+name: Deploy
 
 on:
   push:
-    branches-ignore:
+    branches:
       - main
 
 jobs:
@@ -22,6 +22,9 @@ jobs:
 
       - name: Validate Bundle
         run: databricks bundle validate
+
+      - name: Deploy Bundle
+        run: databricks bundle deploy
 
       - name: Verificar autenticação
         run: databricks current-user me
