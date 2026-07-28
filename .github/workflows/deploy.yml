@@ -1,22 +1,3 @@
-Sim. 👍
-
-Nesse momento, você terá dois workflows separados:
-
-.github/
-└── workflows/
-    ├── ci.yml
-    └── deploy.yml
-
-O ci.yml já cuida da validação.
-
-Agora crie o deploy.yml. Inicialmente, ele pode ser praticamente igual ao ci.yml, mudando apenas:
-
-O nome do workflow.
-O gatilho (on).
-Adicionando o bundle deploy.
-
-Pode usar este conteúdo:
-
 name: Deploy
 
 on:
