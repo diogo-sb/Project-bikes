@@ -90,4 +90,52 @@ Gold
 ```
 ![image_1785126379688.png](./image_1785126379688.png "image_1785126379688.png")
 
-testee
+## 🚀 CI/CD com GitHub Actions e Databricks Asset Bundles
+
+O projeto utiliza um pipeline de Integração Contínua (CI) e Entrega Contínua (CD) para automatizar a validação, o deploy e a execução do workflow no Databricks.
+
+### Fluxo de CI/CD
+
+```text
+feature/*
+      │
+      ▼
+Push para o GitHub
+      │
+      ▼
+GitHub Actions (CI)
+      │
+      ├── Checkout do código
+      ├── Configuração do Databricks CLI
+      ├── Validação do Databricks Asset Bundle
+      └── Verificação da estrutura do projeto
+      │
+      ▼
+Pull Request
+      │
+      ▼
+Merge para main
+      │
+      ▼
+GitHub Actions (CD)
+      │
+      ├── Deploy do Databricks Asset Bundle
+      ├── Atualização automática dos Notebooks
+      ├── Atualização do Databricks Workflow
+      └── Execução automática do pipeline
+      │
+      ▼
+Databricks Workflow
+      │
+      ▼
+Bronze → Silver → Gold
+```
+
+### Funcionalidades implementadas
+
+- ✅ Versionamento completo do projeto com Git e GitHub.
+- ✅ Pipeline de CI utilizando GitHub Actions.
+- ✅ Validação automática do Databricks Asset Bundle antes do deploy.
+- ✅ Deploy automático do Workflow e dos notebooks após merge na branch `main`.
+- ✅ Execução automática do pipeline no Databricks após o deploy.
+- ✅ Infraestrutura como código (Infrastructure as Code) utilizando Databricks Asset Bundles.
