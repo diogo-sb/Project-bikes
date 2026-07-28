@@ -1,9 +1,9 @@
-name: Deploy Databricks
+name: CI
 
 on:
   push:
-    branches:
-      - release/1.0
+    branches-ignore:
+      - main
 
 jobs:
   deploy:
