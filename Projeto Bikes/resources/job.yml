@@ -5,7 +5,7 @@ resources:
       tasks:
         - task_key: 01-brands
           notebook_task:
-            notebook_path: /Workspace/Users/diogo_761@hotmail.com/.bundle/Project-bikes/default/files/Projeto Bikes/notebooks/01.bronze/01.brands
+            notebook_path: ${workspace.file_path}/Project-bikes/default/files/Projeto Bikes/notebooks/01.bronze/01.brands
             source: WORKSPACE
         - task_key: 02-categories
           notebook_task:
