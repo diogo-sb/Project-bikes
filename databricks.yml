@@ -3,3 +3,7 @@ bundle:
 
 include:
   - Projeto Bikes/resources/*.yml
+
+sync:
+  include:
+    - Projeto Bikes/notebooks/**
